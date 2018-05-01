@@ -27,3 +27,21 @@ The length of A and B will be between 1 and 10000.
                 count +=1
         
         return res
+
+"""
+Optimized solution
+"""
+      
+ def repeatedStringMatch(self, A, B):
+        """
+        :type A: str
+        :type B: str
+        :rtype: int
+        """
+        temp = ""
+        for i in range(len(B)//len(A)+3): 
+            if B in temp:
+                return i
+            temp += A
+        
+        return -1
