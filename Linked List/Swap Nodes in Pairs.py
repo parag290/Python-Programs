@@ -23,7 +23,7 @@ def swapPairs(self, head):
         
         temp = head
         head = head.next
-        count = 0
+
         while temp != None and temp.next != None:
            
             next_node = temp.next
